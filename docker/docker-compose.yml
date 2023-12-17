@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+    mysql:
+        image: mysql:latest
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_ROOT_PASSWORD: mukellef
+            MYSQL_DATABASE: mukellef
+            MYSQL_USER: mukellef
+            MYSQL_PASSWORD: mukellef
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links:
+            - mysql
+        environment:
+            PMA_HOST: mysql
+            PMA_PORT: 3306
+        ports:
+            - "8080:80"
