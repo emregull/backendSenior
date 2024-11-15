@@ -1,6 +1,6 @@
 ## Proje Adı
 
-Emre Gül - Mükellef - Senior Backend Projesi
+Emre Gül - Senior Backend Projesi
 
 ## Başlangıç
 
